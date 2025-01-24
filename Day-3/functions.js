@@ -1,6 +1,5 @@
-// displayName("Manikandan Anbalagan"); // Actual value - Argument - function call
-// displayName("Thiwan M");
-function displayName(name) {
-  // Parameter - name
-  console.log(name);
-}
+(function () {
+  console.log("Manikandan Anbalagan");
+})(); // IIFE - Immediately Invoked Function Expression
+
+// (function() { // statement })();
