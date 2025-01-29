@@ -1,0 +1,17 @@
+div {
+    background-color: aqua;
+    color: blue;
+    font-size: 20px;
+    border: 10px solid red;
+  }
+  #div3 {
+    border: 10px double green;
+  }
+  .primary {
+    background-color: blue;
+    color: white;
+  }
+  .secondary {
+    background-color: goldenrod;
+    color: white;
+  }
