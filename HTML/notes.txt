@@ -1,3 +1,6 @@
 https://cleverzone.medium.com/comprehensive-guide-to-mastering-the-for-loops-in-javascript-a42ba66c83ef
 
 https://medium.com/@happymishra66/objects-in-javascript-2980a15e9e71
+
+
+29-01-2025 - https://mehediishere.medium.com/css-selectors-with-details-example-13f57867f63b
