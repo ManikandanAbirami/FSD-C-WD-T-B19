@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Classes And Elements</title>
+    <style>
+      a:link {
+        color: red;
+      }
+      a:visited {
+        color: green;
+      }
+      input:focus {
+        outline: 2px solid blue;
+      }
+      input:invalid {
+        outline: 2px solid red;
+      }
+      button:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+      button:active {
+        background-color: orange;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Guvi CSS Fundamentals!</h1>
+    <p>
+      Go to
+      <a href="https://www.guvi.in/" target="_blank">Guvi</a>
+    </p>
+
+    <p>Guvi is the best!</p>
+    <p>CSS give the look and feel!</p>
+
+    <label for="txtName">Name:</label>
+    <input id="txtName" type="text" minlength="6" />
+    <button>Save</button> -->
+    <!-- <div>
+      <table style="border: 1px solid green">
+        <caption>
+          Guvi Products!!
+        </caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>ReactJS</th>
+            <td>Free</td>
+            <td>4.5</td>
+          </tr>
+          <tr>
+            <th>NodeJS</th>
+            <td>Free</td>
+            <td>4.5</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+    <div>
+      <table>
+        <caption>
+          Budget
+        </caption>
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Budget</th>
+            <th>Spending</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <th>Food</th>
+            <td>200</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <th>Entertainment</th>
+            <td>250</td>
+            <td>300</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <form>
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter your username" />
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+        />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" />
+        <br />
+        <br />
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age" />
+        <br />
+        <br />
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" />
+        <br />
+        <br />
+        <!-- gender -->
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" />
+        <label for="other">Other</label>
+        <br />
+        <br />
+        <!-- dropdown -->
+        <label for="country">Country:</label>
+        <select id="country">
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="uk">UK</option>
+          <option value="canada">Canada</option>
+          <option value="australia">Australia</option>
+        </select>
+        <br />
+        <br />
+        <!-- checkbox -->
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading" />
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="writing" name="hobbies" value="writing" />
+        <label for="writing">Writing</label>
+        <input type="checkbox" id="sports" name="hobbies" value="sports" />
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="music" name="hobbies" value="music" />
+        <label for="music">Music</label>
+        <br />
+        <br />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
