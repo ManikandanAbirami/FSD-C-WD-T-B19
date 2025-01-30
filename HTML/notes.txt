@@ -2,5 +2,20 @@ https://cleverzone.medium.com/comprehensive-guide-to-mastering-the-for-loops-in-
 
 https://medium.com/@happymishra66/objects-in-javascript-2980a15e9e71
 
+-------------------------------------------------------------------------------------------------------------------------------
 
 29-01-2025 - https://mehediishere.medium.com/css-selectors-with-details-example-13f57867f63b
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+30-01-2025
+
+https://github.com/ManikandanAbirami/FSD-C-WD-T-B19/tree/4b5950f2aab6b36ddb16272414f8700139e8b2b2/Array_Methods_Practice/Day-3
+
+https://medium.com/@kudzanayi/css-box-model-564a0a50771d
+
+https://medium.com/@sikirus81/a-beginners-guide-to-the-css-box-model-be2649056baa
+
+https://medium.com/@rashmipatil24/html-tables-d67d6588eebf
+
+--------------------------------------------------------------------------------------------------------------------------------
