@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form with Background & Validation</title>
+    <style>
+      /* Full-page background */
+      body {
+        background-image: url("https://images.unsplash.com/1/type-away.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      /* Form container */
+      .form-container {
+        background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+        padding: 30px;
+        width: 350px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        color: white;
+        text-align: center;
+      }
+
+      /* Input fields */
+      input {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      /* Style for required field error messages */
+      input:invalid {
+        border: 2px solid red;
+      }
+
+      input:valid {
+        border: 2px solid green;
+      }
+
+      /* Submit button */
+      button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+    </style>
+  </head>
+  <body>
+    <form class="form-container">
+      <h2>Login</h2>
+      <!-- Username Input with Required Validation -->
+      <input type="text" name="username" placeholder="Username" required />
+      <!-- Password Input with Required Validation -->
+      <input type="password" name="password" placeholder="Password" required />
+
+      <!-- Submit Button -->
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
