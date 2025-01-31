@@ -1,0 +1,33 @@
+#parent {
+    width: 75%;
+    border: 2px solid black;
+}
+
+#red {
+    width: 50%;
+    background-color: red;
+}
+
+#blue {
+    width: 300px;
+    background-color: blue;
+}
+
+html {
+    font-size: 20px;
+}
+
+#green {
+    font-size: 30px;
+    width: 10em;
+    background-color: green;
+}
+
+p {
+    width: 60ch;
+}
+
+div {
+    margin: 10px;
+    color: white;
+}
