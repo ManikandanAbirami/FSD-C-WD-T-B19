@@ -1,0 +1,19 @@
+div{
+    background-color: chocolate;
+    width: 30%;
+    height: 6em;
+    border-radius: 12px;
+    margin: 4rem;
+    padding: 12px;
+    /* transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+    transition: width 0.5s linear 0s, transform 0.5s linear 0s;
+    
+}
+
+div:hover {
+    width: 50%;
+    transform: rotate(180deg);
+}

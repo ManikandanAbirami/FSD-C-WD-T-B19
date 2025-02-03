@@ -10,10 +10,15 @@ body > p {
     background-color: lightblue;
 }
 
-#box {
+/* section {
     position: relative;
+} */
+
+#box {
+    position: absolute;
+    top:10px;
     bottom:10px;
-    left: 200px;
+    right: 100px;
     width: 15rem;
     height: 10rem;
     background-color: lightcoral;
