@@ -1,0 +1,31 @@
+p {
+    font-size: 1.75rem;
+    margin: 1.5rem;
+    padding: 1rem;
+    border: 2px solid black;
+}
+
+
+body > p {
+    background-color: lightblue;
+}
+
+#box {
+    position: relative;
+    bottom:10px;
+    left: 200px;
+    width: 15rem;
+    height: 10rem;
+    background-color: lightcoral;
+    border: 2px solid black;
+}
+
+#long {
+    background-color: lightyellow;
+}
+
+/* static - default value
+fixed - top, left, right, bottom
+relative - top, left, right, bottom
+sticky
+absolute */
