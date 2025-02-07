@@ -1,0 +1,40 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px
+}
+
+.signup {
+    background-color: #FA7436;
+    width: 80px;
+    height: 25px;
+    color: #FFFFFF;
+    border-radius: 5px;
+    box-shadow: #FA7436;
+    font-size: 12px;
+    border: none;
+}
+
+.login {
+    background-color: #FFFFFF;
+    color:#FA7436;
+    border: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
