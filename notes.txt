@@ -25,3 +25,5 @@ https://medium.com/@rashmipatil24/html-tables-d67d6588eebf
 https://medium.com/@bibinantony/css-units-explained-c9a0e0ac14b3
 
 --------------------------------------------------------------------------------------------------------------------------------
+
+https://tailwind-workshop.vercel.app/variants
