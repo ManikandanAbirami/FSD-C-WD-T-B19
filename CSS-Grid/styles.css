@@ -6,6 +6,7 @@ body {
     "header header"
     "aside main"
     "footer footer";
+    gap: 10px
     /* justify-items: center; */
     /* align-items: center; */
     
@@ -20,6 +21,10 @@ header {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     grid-area: main;
 }
 
