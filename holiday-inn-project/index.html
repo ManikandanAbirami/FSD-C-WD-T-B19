@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holiday Inn Landing Page</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- Navbar Section -->
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#" class="text-2xl font-extrabold text-blue-600"
+          >&#127796; Holiday Inn</a
+        >
+
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-gray-600 hover:text-blue-500 transition"
+            >Home</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-500 transition"
+            >About</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-500 transition"
+            >Contact</a
+          >
+          <a href="#" class="text-gray-600 hover:text-blue-500 transition"
+            >Book Now</a
+          >
+        </div>
+
+        <!-- Mobile view menu button -->
+        <button
+          class="md:hidden text-2xl text-gray-700"
+          id="mobile-menu-button"
+        >
+          &#9776;
+        </button>
+      </div>
+      <div
+        class="hidden bg-white shawdow-md md:hidden absolute top-16 left-0 w-full p-4"
+        id="mobile-menu"
+      >
+        <a
+          href="#"
+          class="block py-2 text-gray-600 hover:text-blue-500 transition"
+          >Home</a
+        >
+        <a
+          href="#"
+          class="block py-2 text-gray-600 hover:text-blue-500 transition"
+          >About</a
+        >
+        <a
+          href="#"
+          class="block py-2 text-gray-600 hover:text-blue-500 transition"
+          >Contact</a
+        >
+        <a
+          href="#"
+          class="block py-2 text-gray-600 hover:text-blue-500 transition"
+          >Book Now</a
+        >
+      </div>
+    </nav>
+    <header
+      class="relative bg-cover bg-center h-screen flex items-center justify-center text-white text-center"
+      style="background-image: url('./assets/hero.jpg')"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="z-10 px-6">
+        <h1 class="text-5xl md:text-6xl font-extrabold drop-shadow-lg">
+          &#127796;Escape to Paradise
+        </h1>
+        <p class="mt-4 text-lg md:text-2xl drop-shadow-md">
+          Stay, Relax, and Enjoy the Best Holiday Experience
+        </p>
+        <button
+          class="mt-6 px-6 py-3 bg-yellow-500 text-gray-900 font-bold rounded-lg shadow-lg hover:bg-yellow-600 transition"
+        >
+          Book Now
+        </button>
+      </div>
+    </header>
+    <section class="py-16 bg-white text-center">
+      <h2 class="text-4xl font-extrabold text-gray-800">Why Choose Us?</h2>
+      <p class="text-gray-600 mt-2">
+        Experience luxury, comfort, and top-tier services.
+      </p>
+      <div>
+        <div
+          class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <img
+            src="./assets/pool.jpg"
+            class="mx-auto mb-4 rounded-full w-24 h-24 object-cover"
+            alt=""
+          />
+          <h3 class="text-2xl font-semibold text-blue-700">Infinity Pool</h3>
+          <p class="text-gray-600 mt-2">
+            Relax in out breathtaking rooftop infinity pool.
+          </p>
+        </div>
+        <div
+          class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <img
+            src="./assets/spa.jpg"
+            class="mx-auto mb-4 rounded-full w-24 h-24 object-cover"
+            alt=""
+          />
+          <h3 class="text-2xl font-semibold text-blue-700">Luxury Spa</h3>
+          <p class="text-gray-600 mt-2">
+            Rejuvinate with world-class spa treatment.
+          </p>
+        </div>
+        <div
+          class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transition"
+        >
+          <img
+            class="mx-auto mb-4 rounded-full w-24 h-24 object-cover"
+            src="./assets/cuisine.jpg"
+            alt=""
+          />
+          <h3 class="text-2xl font-semibold text-blue-700">Exotic Cuisine</h3>
+          <p class="text-gray-600 mt-2">
+            Indulge in gourmet dishes crafted by top chefs.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="py-16 bg-gradient-to-r from-blue-400 to-blue-600 text-white text-center"
+    >
+      <h2 class="text-4xl font-extrabold">Stunning Views</h2>
+      <p class="text-lg text-blue-200 mt-2">
+        Discover the beauty of our paradise resort.
+      </p>
+      <div
+        class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto px-6"
+      >
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            class="w-full h-40 object-cover transform hover:scale-105 transition duration-300"
+            src="./assets/beach.jpg"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            class="w-full h-40 object-cover transform hover:scale-105 transition duration-300"
+            src="./assets/hotel-room.jpg"
+            alt=""
+          />
+        </div>
+        <div class="overflow-hidden rounded-lg shadow-lg">
+          <img
+            class="w-full h-40 object-cover transform hover:scale-105 transition duration-300"
+            src="./assets/sunset.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-white text-center">
+      <h2 class="text-4xl font-extrabold text-gray-800">What Out Guests Say</h2>
+      <p class="text-lg text-gray-600 mt-2">Hear from our happy customers!!</p>
+      <div>
+        <div
+          class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto px-6"
+        >
+          <img
+            class="w-16 h-16 rounded-full mx-auto"
+            src="./assets/user1.jpg"
+            alt=""
+          />
+          <p class="text-gray-700 italic mt-4">
+            "The best vacation ever! Stunning views, great food, and amazing
+            service!"
+          </p>
+          <h3 class="mt-4 font-bold text-blue-700">Mark L.</h3>
+        </div>
+        <div
+          class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-10 max-w-6xl mx-auto px-6"
+        >
+          <img
+            src="./assets/user2.jpg"
+            alt=""
+            class="w-16 h-16 rounded-full mx-auto"
+          />
+          <p class="text-gray-700 italic mt-4">
+            "Absolutely loved it!! Highly recommend this resort."
+          </p>
+          <h3 class="mt-4 font-bold text-blue-700">Sarah J.</h3>
+        </div>
+      </div>
+    </section>
+    <section class="py-16 bg-yellow-500 text-gray-900 text-center">
+      <h2 class="text-4xl font-extrabold">Ready for your dream vacation?</h2>
+      <p class="mt-2 text-xl">Book now and get an exclusive 10% discount!</p>
+      <button
+        class="mt-6 px-6 py-3 bg-gray-900 text-white font-bold rounded-lg shadow-lg hover:bg-gray-800 transition"
+      >
+        Book Now
+      </button>
+    </section>
+    <footer class="py-8 bg-gray-900 text-white text-center">
+      <p>Holiday Inn, Maldives | contact@holidayinn.com | +123 456 7890</p>
+      <div class="mt-4 flex justify-center gap-6">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <p>© 2023 Holiday Inn. All rights reserved.</p>
+    </footer>
+    <script>
+      const menuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
