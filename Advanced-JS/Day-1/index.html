@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+  </head>
+  <body>
+    <div id="div">
+      <h1 id="wish">Hello Guvi</h1>
+      <p id="para">
+        Hello, <br />
+        H r u?
+      </p>
+    </div>
+
+    <button onclick="change()">Change</button>
+    <script>
+      function change() {
+        var divElement = document.getElementById("div");
+        divElement.innerHTML = "No content!!!!";
+        var element = document.getElementById("wish");
+        //console.log(element);
+        element.innerHTML = "New content";
+        var paraElement = document.getElementById("para");
+        paraElement.innerHTML =
+          "<h2>Welcome</h2><h3>Welcome</h3><h4>Welcome</h4>";
+      }
+    </script>
+  </body>
+</html>
