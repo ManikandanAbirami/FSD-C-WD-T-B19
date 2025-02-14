@@ -4,20 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link
-      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
   </head>
+
   <body class="flex items-center justify-center h-screen bg-gray-100">
-    <div class="relative w-64 h-64">
-      <div
-        class="absolute top-10 left-10 w-40 h-40 bg-blue-500 rounded-md z-30"
-      >
-        <p class="text-white pt-16 text-center">Box 1 (z-10)</p>
-      </div>
-      <div class="absolute top-10 left-10 w-40 h-40 bg-red-500 rounded-md z-20">
-        <p class="text-white pt-16 text-center">Box 2 (z-20)</p>
+    <div
+      class="mx-auto max-w-xs overflow-hidden rounded-xl bg-white shadow-md md:max-w-2xl"
+    >
+      <div class="md:flex">
+        <div class="md:shrink-0">
+          <img
+            class="h-48 w-full object-cover md:h-full md:w-48"
+            src="../holiday-inn-project/assets/cuisine.jpg "
+            alt="Modern building architecture"
+          />
+        </div>
+        <div class="p-8">
+          <div
+            class="text-sm font-semibold tracking-wide text-indigo-500 uppercase"
+          >
+            Company retreats
+          </div>
+          <a
+            href="#"
+            class="mt-1 block text-lg leading-tight font-medium text-black hover:underline"
+          >
+            Incredible accommodation for your team
+          </a>
+          <p class="mt-2 text-gray-500">
+            Looking to take your team away on a retreat to enjoy awesome food
+            and take in some sunshine? We have a list of places to do just that.
+          </p>
+        </div>
       </div>
     </div>
   </body>
