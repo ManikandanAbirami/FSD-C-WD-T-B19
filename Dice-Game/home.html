@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="para1">This is the first paragraph.</p>
+    <p id="para2">This is the second paragraph.</p>
+    <p id="para3">This is the third paragraph.</p>
+    <p id="para4">This is the fourth paragraph.</p>
+
+    <button id="insertPara" onclick="insertNewPara()">
+      Insert a New Paragraph
+    </button>
+    <script>
+      const insertPara = document.getElementById("insertPara");
+
+      function insertNewPara() {
+        let newPara = document.createElement("p");
+        newPara.textContent = "This is a newly inserted paragraph.";
+
+        let para2 = document.getElementById("para2");
+
+        let parentDiv = para4.parentNode;
+
+        parentDiv.insertBefore(newPara, para2);
+      }
+    </script>
+  </body>
+</html>

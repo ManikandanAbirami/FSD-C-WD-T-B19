@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice Roll Game</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center h-screen bg-purple-600 text-white"
+  >
+    <h1 class="text-3xl font-bold mb-6">🎲 Dice Roll Game 🎲</h1>
+    <div class="flex space-x-10">
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">Player 1</h2>
+        <img
+          id="dice1"
+          src="./assets/dice1.svg.png"
+          alt="Dice 1"
+          class="w-24 mx-auto my-4"
+        />
+      </div>
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">Player 2</h2>
+        <img
+          id="dice2"
+          src="./assets/dice1.svg.png"
+          alt="Dice 2"
+          class="w-24 mx-auto my-4"
+        />
+      </div>
+    </div>
+    <button
+      id="rollDice"
+      class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-6 rounded-lg mt-6"
+    >
+      Roll the Dice 🎲
+    </button>
+    <button
+      id="resetGame"
+      class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-lg mt-6"
+    >
+      Reset
+    </button>
+    <h2 id="winner" class="text-2xl font-bold mt-4"></h2>
+    <script src="./script.js"></script>
+  </body>
+</html>
