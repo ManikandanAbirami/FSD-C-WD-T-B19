@@ -1,6 +1,17 @@
+Todo App:
 
 https://www.youtube.com/watch?v=G0jO8kUrg-I
 
 https://www.youtube.com/watch?v=3OqWCGVaOkA
 
 https://www.youtube.com/watch?v=-oP7JK_rXUI
+
+Memory Game:
+
+https://www.youtube.com/watch?v=bznJPt4t_4s
+
+https://aadaobi.medium.com/building-a-memory-matching-game-in-javascript-48e792c7b563
+
+https://www.youtube.com/watch?v=FqlaSuOjmb4
+
+https://www.youtube.com/watch?v=ZS3RH9NNjPY
