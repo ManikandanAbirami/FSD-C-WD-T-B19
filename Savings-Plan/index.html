@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savings Goal Tracker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-gradient-to-r from-blue-500 to-green-500 min-h-screen flex justify-center items-center"
+  >
+    <div class="bg-white p-6 rounded-xl shadow-lg w-full max-w-md">
+      <h1 class="text-3xl font-bold text-center text-green-600">
+        💰 Savings Goal Tracker
+      </h1>
+
+      <div class="mt-4">
+        <h2 class="text-lg font-semibold text-gray-700">
+          Goal: <span id="goal" class="text-blue-600">₹0</span>
+        </h2>
+        <h2 class="text-lg font-semibold text-gray-700">
+          Saved: <span id="saved" class="text-green-600">₹0</span>
+        </h2>
+        <h2 class="text-lg font-semibold text-gray-700">
+          Remaining: <span id="remaining" class="text-red-600">₹0</span>
+        </h2>
+      </div>
+
+      <form id="savings-form" class="mt-4">
+        <input
+          type="number"
+          id="goal-amount"
+          placeholder="Set Goal Amount"
+          class="w-full px-3 py-2 border rounded mb-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+        >
+          Set Goal
+        </button>
+      </form>
+
+      <form id="savings-log-form" class="mt-4">
+        <input
+          type="number"
+          id="savings-amount"
+          placeholder="Add Savings"
+          class="w-full px-3 py-2 border rounded mb-2 focus:outline-none focus:ring-2 focus:ring-green-500"
+        />
+        <button
+          type="submit"
+          class="w-full bg-green-600 text-white py-2 rounded hover:bg-green-700"
+        >
+          Add Savings
+        </button>
+      </form>
+
+      <ul id="savings-log" class="mt-4 space-y-2"></ul>
+
+      <button
+        id="reset"
+        class="w-full mt-4 bg-red-500 text-white py-2 rounded hover:bg-red-600"
+      >
+        Reset
+      </button>
+    </div>
+    <script>
+      let goal = parseInt(localStorage.getItem("goal")) || 0;
+      let savings = parseInt(localStorage.getItem("savings")) || [];
+      //   document.getElementById("goal");
+      //   document.getElementById("saved");
+      //   document.getElementById("remaining");
+      document
+        .getElementById("savings-log-form")
+        .addEventListener("submit", addSavings);
+
+      document
+        .getElementById("savings-form")
+        .addEventListener("submit", setGoal);
+
+      updateUI();
+
+      function updateUI() {
+        const savedAmount = savings.reduce(
+          (acc, entry) => acc + entry.amount,
+          0
+        );
+        document.getElementById("goal").innerText = `₹${goal}`;
+        document.getElementById("saved").innerText = `₹${savedAmount}`;
+        document.getElementById("remaining").innerText = `₹${Math.max(
+          goal - savedAmount,
+          0
+        )}`;
+        const log = document.getElementById("savings-log");
+        log.innerHTML = "";
+
+        savings.forEach((entry, index) => {
+          const li = document.createElement("li");
+          li.className =
+            "flex justify-between items-center bg-green-200 px-4 py-2 rounded shadow";
+          li.innerHTML = `₹${entry.amount} <button class="text-red-500" onclick="removeSavings(${index})">Remove</button>`;
+          log.appendChild(li);
+        });
+
+        localStorage.setItem("savings", JSON.stringify(savings));
+        localStorage.setItem("goal", goal);
+      }
+
+      function addSavings(event) {
+        event.preventDefault(); // Prevent form submission
+        const amount = parseInt(
+          document.getElementById("savings-amount").value
+        );
+
+        if (amount > 0) {
+          savings.push({ amount });
+          updateUI();
+        }
+
+        console.log(savings);
+      }
+
+      function setGoal(event) {
+        event.preventDefault();
+        goal = parseInt(document.getElementById("goal-amount").value);
+        updateUI();
+      }
+
+      function removeSavings(index) {
+        savings.splice(index, 1);
+        updateUI();
+      }
+
+      document.getElementById("reset").addEventListener("click", () => {
+        goal = 0;
+        savings = [];
+        updateUI();
+        localStorage.clear();
+      });
+    </script>
+  </body>
+</html>
